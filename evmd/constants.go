@@ -2,16 +2,16 @@ package evmd
 
 const (
 	// ExampleChainDenom is the denomination of the Cosmos EVM example chain's base coin.
-	ExampleChainDenom = "aatom"
+	ExampleChainDenom = "asilc"
 
 	// ExampleDisplayDenom is the display denomination of the Cosmos EVM example chain's base coin.
-	ExampleDisplayDenom = "atom"
+	ExampleDisplayDenom = "silc"
 
 	// EighteenDecimalsChainID is the chain ID for the 18 decimals chain.
-	EighteenDecimalsChainID = "cosmos_9001"
+	EighteenDecimalsChainID = "silc_2024"
 
 	// SixDecimalsChainID is the chain ID for the 6 decimals chain.
-	SixDecimalsChainID = "ossix_9002"
+	SixDecimalsChainID = "silc_2025"
 
-	CosmosChainID = "cosmos_262144"
+	CosmosChainID = "silc_2026"
 )
