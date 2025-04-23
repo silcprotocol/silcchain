@@ -7,9 +7,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/evm/utils"
-	"github.com/cosmos/evm/x/erc20/types"
-	"github.com/cosmos/evm/x/vm/statedb"
+	"github.com/silcprotocol/silcchain/utils"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

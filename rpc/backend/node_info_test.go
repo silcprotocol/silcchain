@@ -11,11 +11,11 @@ import (
 
 	tmrpcclient "github.com/cometbft/cometbft/rpc/client"
 
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	"github.com/cosmos/evm/rpc/backend/mocks"
-	"github.com/cosmos/evm/server/config"
-	"github.com/cosmos/evm/testutil/constants"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	"github.com/silcprotocol/silcchain/rpc/backend/mocks"
+	"github.com/silcprotocol/silcchain/server/config"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

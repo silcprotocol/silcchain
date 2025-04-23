@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"math/big"
 
-	"github.com/cosmos/evm/testutil/integration/os/utils"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"

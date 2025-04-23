@@ -6,13 +6,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/cosmos/evm/ante/evm"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	"github.com/cosmos/evm/testutil/integration/os/grpc"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	"github.com/cosmos/evm/x/vm/statedb"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/ante/evm"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

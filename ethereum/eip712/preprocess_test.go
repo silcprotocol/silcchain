@@ -8,12 +8,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/evm/encoding"
-	"github.com/cosmos/evm/ethereum/eip712"
-	"github.com/cosmos/evm/testutil/constants"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/encoding"
+	"github.com/silcprotocol/silcchain/ethereum/eip712"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

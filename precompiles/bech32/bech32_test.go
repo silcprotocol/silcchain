@@ -6,8 +6,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	chainconfig "github.com/cosmos/evm/cmd/evmd/config"
-	"github.com/cosmos/evm/precompiles/bech32"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	"github.com/silcprotocol/silcchain/precompiles/bech32"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

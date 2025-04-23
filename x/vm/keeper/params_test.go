@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	exampleapp "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/x/vm/types"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

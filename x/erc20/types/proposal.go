@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	cosmosevmtypes "github.com/cosmos/evm/types"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 
 	errorsmod "cosmossdk.io/errors"
 

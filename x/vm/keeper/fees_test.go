@@ -7,9 +7,9 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
 
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/x/vm/keeper"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/x/vm/keeper"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	sdkmath "cosmossdk.io/math"
 

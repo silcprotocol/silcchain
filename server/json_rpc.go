@@ -9,9 +9,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
 
-	"github.com/cosmos/evm/rpc"
-	serverconfig "github.com/cosmos/evm/server/config"
-	cosmosevmtypes "github.com/cosmos/evm/types"
+	"github.com/silcprotocol/silcchain/rpc"
+	serverconfig "github.com/silcprotocol/silcchain/server/config"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server"

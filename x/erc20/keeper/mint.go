@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/cosmos/evm/x/erc20/types"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
 
 	errorsmod "cosmossdk.io/errors"
 

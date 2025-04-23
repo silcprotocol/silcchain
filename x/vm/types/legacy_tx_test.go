@@ -6,7 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 func (suite *TxDataTestSuite) TestNewLegacyTx() {

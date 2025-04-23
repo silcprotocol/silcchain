@@ -8,12 +8,12 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/staking"
-	"github.com/cosmos/evm/precompiles/testutil"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/x/vm/statedb"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	"cosmossdk.io/math"
 

@@ -27,12 +27,12 @@ import (
 	cmtclient "github.com/cometbft/cometbft/rpc/client"
 
 	dbm "github.com/cosmos/cosmos-db"
-	chaincmd "github.com/cosmos/evm/cmd/evmd/cmd"
-	"github.com/cosmos/evm/crypto/hd"
-	exampleapp "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/server/config"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	cosmosevmtypes "github.com/cosmos/evm/types"
+	chaincmd "github.com/silcprotocol/silcchain/cmd/evmd/cmd"
+	"github.com/silcprotocol/silcchain/crypto/hd"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/server/config"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 
 	"cosmossdk.io/log"
 	"cosmossdk.io/math"

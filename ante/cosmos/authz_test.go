@@ -11,12 +11,12 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	cosmosante "github.com/cosmos/evm/ante/cosmos"
-	"github.com/cosmos/evm/testutil"
-	"github.com/cosmos/evm/testutil/integration/common/factory"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	cosmosante "github.com/silcprotocol/silcchain/ante/cosmos"
+	"github.com/silcprotocol/silcchain/testutil"
+	"github.com/silcprotocol/silcchain/testutil/integration/common/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

@@ -1,8 +1,8 @@
 package distribution_test
 
 import (
-	"github.com/cosmos/evm/precompiles/staking"
-	"github.com/cosmos/evm/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
 
 	"cosmossdk.io/math"
 

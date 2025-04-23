@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/cosmos/evm/testutil/integration/os/keyring"
-	testutils "github.com/cosmos/evm/testutil/integration/os/utils"
-	"github.com/cosmos/evm/x/ibc/transfer/keeper"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	testutils "github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	"github.com/silcprotocol/silcchain/x/ibc/transfer/keeper"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	"github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v8/modules/core/04-channel/types"
 

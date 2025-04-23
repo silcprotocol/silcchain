@@ -3,9 +3,9 @@ package network
 import (
 	"math/big"
 
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

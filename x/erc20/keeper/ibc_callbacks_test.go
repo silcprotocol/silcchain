@@ -7,12 +7,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/cosmos/evm/contracts"
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	"github.com/cosmos/evm/testutil"
-	"github.com/cosmos/evm/x/erc20/keeper"
-	"github.com/cosmos/evm/x/erc20/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/contracts"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	"github.com/silcprotocol/silcchain/testutil"
+	"github.com/silcprotocol/silcchain/x/erc20/keeper"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	transfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	clienttypes "github.com/cosmos/ibc-go/v8/modules/core/02-client/types"
 	channeltypes "github.com/cosmos/ibc-go/v8/modules/core/04-channel/types"

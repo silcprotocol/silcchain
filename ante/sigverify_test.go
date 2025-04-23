@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/evm/ante"
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	"github.com/cosmos/evm/encoding"
+	"github.com/silcprotocol/silcchain/ante"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	"github.com/silcprotocol/silcchain/encoding"
 
 	storetypes "cosmossdk.io/store/types"
 

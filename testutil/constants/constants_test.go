@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	chainconfig "github.com/cosmos/evm/cmd/evmd/config"
-	"github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/testutil/constants"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	"github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/testutil/constants"
 )
 
 func TestRequireSameTestDenom(t *testing.T) {

@@ -8,9 +8,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/stretchr/testify/require"
 
-	cryptocodec "github.com/cosmos/evm/crypto/codec"
-	enccodec "github.com/cosmos/evm/encoding/codec"
-	cosmosevmtypes "github.com/cosmos/evm/types"
+	cryptocodec "github.com/silcprotocol/silcchain/crypto/codec"
+	enccodec "github.com/silcprotocol/silcchain/encoding/codec"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 
 	amino "github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/codec/types"

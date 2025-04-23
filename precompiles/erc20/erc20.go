@@ -7,10 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	auth "github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	transferkeeper "github.com/cosmos/evm/x/ibc/transfer/keeper"
+	auth "github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	transferkeeper "github.com/silcprotocol/silcchain/x/ibc/transfer/keeper"
 
 	storetypes "cosmossdk.io/store/types"
 

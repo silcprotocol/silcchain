@@ -3,8 +3,8 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	rpctypes "github.com/cosmos/evm/rpc/types"
-	"github.com/cosmos/evm/x/vm/types"
+	rpctypes "github.com/silcprotocol/silcchain/rpc/types"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

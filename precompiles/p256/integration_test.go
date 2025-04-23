@@ -14,14 +14,14 @@ import (
 
 	"github.com/cometbft/cometbft/crypto"
 
-	exampleapp "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/precompiles/p256"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	"github.com/cosmos/evm/testutil/integration/os/grpc"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	"github.com/cosmos/evm/testutil/integration/os/utils"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/precompiles/p256"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 type IntegrationTestSuite struct {

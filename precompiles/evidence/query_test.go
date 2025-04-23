@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/evidence"
-	"github.com/cosmos/evm/precompiles/testutil"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/evidence"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
 
 	evidencetypes "cosmossdk.io/x/evidence/types"
 

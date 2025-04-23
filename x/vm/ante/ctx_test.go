@@ -1,8 +1,8 @@
 package ante_test
 
 import (
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	evmante "github.com/cosmos/evm/x/vm/ante"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	evmante "github.com/silcprotocol/silcchain/x/vm/ante"
 
 	storetypes "cosmossdk.io/store/types"
 )

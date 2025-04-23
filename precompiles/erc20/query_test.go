@@ -7,10 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	app "github.com/cosmos/evm/evmd"
-	chainutil "github.com/cosmos/evm/evmd/testutil"
-	auth "github.com/cosmos/evm/precompiles/authorization"
-	"github.com/cosmos/evm/precompiles/erc20"
+	app "github.com/silcprotocol/silcchain/evmd"
+	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	auth "github.com/silcprotocol/silcchain/precompiles/authorization"
+	"github.com/silcprotocol/silcchain/precompiles/erc20"
 	"github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 
 	sdkmath "cosmossdk.io/math"

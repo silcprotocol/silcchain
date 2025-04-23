@@ -6,11 +6,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/precompiles/erc20"
-	"github.com/cosmos/evm/precompiles/testutil"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	"github.com/cosmos/evm/x/vm/statedb"
+	"github.com/silcprotocol/silcchain/precompiles/erc20"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	"cosmossdk.io/math"
 

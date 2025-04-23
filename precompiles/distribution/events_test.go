@@ -7,11 +7,11 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	chainconfig "github.com/cosmos/evm/cmd/evmd/config"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/distribution"
-	"github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/x/vm/statedb"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/distribution"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	"cosmossdk.io/math"
 	storetypes "cosmossdk.io/store/types"

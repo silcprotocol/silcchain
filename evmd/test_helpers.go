@@ -11,8 +11,8 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	"github.com/cosmos/evm/cmd/evmd/config"
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
+	"github.com/silcprotocol/silcchain/cmd/evmd/config"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
 	ibctesting "github.com/cosmos/ibc-go/v8/testing"
 
 	"cosmossdk.io/log"

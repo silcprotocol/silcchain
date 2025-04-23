@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	exampleapp "github.com/cosmos/evm/evmd"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/x/erc20/types"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
 )
 
 type ParamsTestSuite struct {

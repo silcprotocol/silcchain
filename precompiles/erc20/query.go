@@ -12,8 +12,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/ibc"
-	auth "github.com/cosmos/evm/precompiles/authorization"
+	"github.com/silcprotocol/silcchain/ibc"
+	auth "github.com/silcprotocol/silcchain/precompiles/authorization"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/authz"

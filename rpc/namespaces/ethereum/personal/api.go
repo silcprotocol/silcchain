@@ -11,10 +11,10 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/evm/crypto/hd"
-	"github.com/cosmos/evm/rpc/backend"
-	"github.com/cosmos/evm/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/crypto/hd"
+	"github.com/silcprotocol/silcchain/rpc/backend"
+	"github.com/silcprotocol/silcchain/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/log"
 

@@ -1,9 +1,9 @@
 package network
 
 import (
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"

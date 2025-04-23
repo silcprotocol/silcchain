@@ -10,8 +10,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
 	transfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	channelkeeper "github.com/cosmos/ibc-go/v8/modules/core/04-channel/keeper"
 	channeltypes "github.com/cosmos/ibc-go/v8/modules/core/04-channel/types"

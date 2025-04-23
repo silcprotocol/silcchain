@@ -3,8 +3,8 @@ package feemarket
 import (
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/cosmos/evm/x/feemarket/keeper"
-	"github.com/cosmos/evm/x/feemarket/types"
+	"github.com/silcprotocol/silcchain/x/feemarket/keeper"
+	"github.com/silcprotocol/silcchain/x/feemarket/types"
 
 	errorsmod "cosmossdk.io/errors"
 

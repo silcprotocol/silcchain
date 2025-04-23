@@ -13,14 +13,14 @@ import (
 
 	abcitypes "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/cosmos/evm/contracts"
-	"github.com/cosmos/evm/precompiles/staking"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	"github.com/cosmos/evm/testutil/integration/os/grpc"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	integrationutils "github.com/cosmos/evm/testutil/integration/os/utils"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/contracts"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	integrationutils "github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

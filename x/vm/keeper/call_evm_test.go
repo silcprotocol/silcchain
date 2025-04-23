@@ -5,11 +5,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/cosmos/evm/contracts"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/x/erc20/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/contracts"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 func (suite *KeeperTestSuite) TestCallEVM() {

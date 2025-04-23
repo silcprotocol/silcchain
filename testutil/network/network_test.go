@@ -10,11 +10,11 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/evm/server/config"
-	"github.com/cosmos/evm/testutil/network"
+	"github.com/silcprotocol/silcchain/server/config"
+	"github.com/silcprotocol/silcchain/testutil/network"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	cosmosevmnetwork "github.com/cosmos/evm/testutil/network"
+	cosmosevmnetwork "github.com/silcprotocol/silcchain/testutil/network"
 )
 
 type IntegrationTestSuite struct {

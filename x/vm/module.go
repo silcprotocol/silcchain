@@ -11,9 +11,9 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/cosmos/evm/x/vm/client/cli"
-	"github.com/cosmos/evm/x/vm/keeper"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/x/vm/client/cli"
+	"github.com/silcprotocol/silcchain/x/vm/keeper"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/core/appmodule"
 

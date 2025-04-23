@@ -1,9 +1,9 @@
 package ante
 
 import (
-	cosmosante "github.com/cosmos/evm/ante/cosmos"
-	evmante "github.com/cosmos/evm/ante/evm"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	cosmosante "github.com/silcprotocol/silcchain/ante/cosmos"
+	evmante "github.com/silcprotocol/silcchain/ante/evm"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	ibcante "github.com/cosmos/ibc-go/v8/modules/core/ante"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

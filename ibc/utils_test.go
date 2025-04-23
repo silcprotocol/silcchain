@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cosmosevmibc "github.com/cosmos/evm/ibc"
-	precompilestestutil "github.com/cosmos/evm/precompiles/testutil"
-	testconstants "github.com/cosmos/evm/testutil/constants"
+	cosmosevmibc "github.com/silcprotocol/silcchain/ibc"
+	precompilestestutil "github.com/silcprotocol/silcchain/precompiles/testutil"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
 	transfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v8/modules/core/04-channel/types"
 	ibctesting "github.com/cosmos/ibc-go/v8/testing"

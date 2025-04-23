@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	"github.com/cosmos/evm/wallets/ledger"
-	"github.com/cosmos/evm/wallets/ledger/mocks"
-	"github.com/cosmos/evm/wallets/usbwallet"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	"github.com/silcprotocol/silcchain/wallets/ledger"
+	"github.com/silcprotocol/silcchain/wallets/ledger/mocks"
+	"github.com/silcprotocol/silcchain/wallets/usbwallet"
 
 	"cosmossdk.io/math"
 

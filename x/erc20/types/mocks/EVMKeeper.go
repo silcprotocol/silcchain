@@ -10,11 +10,11 @@ import (
 
 	core "github.com/ethereum/go-ethereum/core"
 
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	mock "github.com/stretchr/testify/mock"
 
-	statedb "github.com/cosmos/evm/x/vm/statedb"
+	statedb "github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	types "github.com/cosmos/cosmos-sdk/types"
 

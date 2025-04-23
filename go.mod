@@ -1,4 +1,4 @@
-module github.com/cosmos/evm
+module github.com/silcprotocol/silcchain
 
 go 1.23.6
 

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"math/big"
 
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	testtx "github.com/cosmos/evm/testutil/tx"
-	cosmosevmtypes "github.com/cosmos/evm/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	testtx "github.com/silcprotocol/silcchain/testutil/tx"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

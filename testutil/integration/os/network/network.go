@@ -15,13 +15,13 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 	"github.com/cometbft/cometbft/version"
 
-	app "github.com/cosmos/evm/evmd"
-	chainutil "github.com/cosmos/evm/evmd/testutil"
-	commonnetwork "github.com/cosmos/evm/testutil/integration/common/network"
-	"github.com/cosmos/evm/types"
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	app "github.com/silcprotocol/silcchain/evmd"
+	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	commonnetwork "github.com/silcprotocol/silcchain/testutil/integration/common/network"
+	"github.com/silcprotocol/silcchain/types"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	sdkmath "cosmossdk.io/math"
 

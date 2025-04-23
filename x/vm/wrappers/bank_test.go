@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	evmtypes "github.com/cosmos/evm/x/vm/types"
-	"github.com/cosmos/evm/x/vm/wrappers"
-	"github.com/cosmos/evm/x/vm/wrappers/testutil"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
+	"github.com/silcprotocol/silcchain/x/vm/wrappers"
+	"github.com/silcprotocol/silcchain/x/vm/wrappers/testutil"
 
 	sdkmath "cosmossdk.io/math"
 

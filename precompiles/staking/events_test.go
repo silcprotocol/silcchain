@@ -8,11 +8,11 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/staking"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/x/vm/statedb"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	"cosmossdk.io/math"
 

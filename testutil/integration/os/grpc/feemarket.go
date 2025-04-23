@@ -3,7 +3,7 @@ package grpc
 import (
 	"context"
 
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
 )
 
 // GetBaseFee returns the base fee from the feemarket module.

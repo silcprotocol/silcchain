@@ -12,17 +12,17 @@ import (
 	//nolint:revive // dot imports are fine for Ginkgo
 	. "github.com/onsi/gomega"
 
-	"github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/distribution"
-	"github.com/cosmos/evm/precompiles/staking"
-	"github.com/cosmos/evm/precompiles/testutil"
-	"github.com/cosmos/evm/precompiles/testutil/contracts"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	testutils "github.com/cosmos/evm/testutil/integration/os/utils"
-	testutiltx "github.com/cosmos/evm/testutil/tx"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/distribution"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
+	"github.com/silcprotocol/silcchain/precompiles/testutil/contracts"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	testutils "github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

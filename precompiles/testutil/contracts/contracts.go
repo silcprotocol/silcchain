@@ -9,11 +9,11 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	exampleapp "github.com/cosmos/evm/evmd"
-	chainutil "github.com/cosmos/evm/evmd/testutil"
-	precompiletestutil "github.com/cosmos/evm/precompiles/testutil"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	precompiletestutil "github.com/silcprotocol/silcchain/precompiles/testutil"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

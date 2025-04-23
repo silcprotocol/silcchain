@@ -5,9 +5,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	erc20types "github.com/cosmos/evm/x/erc20/types"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
 
 	errorsmod "cosmossdk.io/errors"
 

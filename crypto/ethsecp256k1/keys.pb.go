@@ -118,8 +118,8 @@ func (m *PrivKey) GetKey() []byte {
 }
 
 func init() {
-	proto.RegisterType((*PubKey)(nil), "cosmos.evm.crypto.v1.ethsecp256k1.PubKey")
-	proto.RegisterType((*PrivKey)(nil), "cosmos.evm.crypto.v1.ethsecp256k1.PrivKey")
+	proto.RegisterType((*PubKey)(nil), "silc.evm.crypto.v1.ethsecp256k1.PubKey")
+	proto.RegisterType((*PrivKey)(nil), "silc.evm.crypto.v1.ethsecp256k1.PrivKey")
 }
 
 func init() {

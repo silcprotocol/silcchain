@@ -1,9 +1,9 @@
 package backend
 
 import (
-	"github.com/cosmos/evm/rpc/backend/mocks"
-	rpc "github.com/cosmos/evm/rpc/types"
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
+	"github.com/silcprotocol/silcchain/rpc/backend/mocks"
+	rpc "github.com/silcprotocol/silcchain/rpc/types"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

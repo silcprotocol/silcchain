@@ -3,13 +3,13 @@ package evm_test
 import (
 	"fmt"
 
-	"github.com/cosmos/evm/ante/evm"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	"github.com/cosmos/evm/testutil/integration/os/grpc"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	integrationutils "github.com/cosmos/evm/testutil/integration/os/utils"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/ante/evm"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	integrationutils "github.com/silcprotocol/silcchain/testutil/integration/os/utils"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	storetypes "cosmossdk.io/store/types"
 

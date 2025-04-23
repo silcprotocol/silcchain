@@ -9,8 +9,8 @@ import (
 
 	"cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 // ChainsCoinInfo is a map of the chain id and its corresponding EvmCoinInfo

@@ -7,8 +7,8 @@ import (
 
 	"github.com/cometbft/cometbft/libs/cli"
 
-	clientkeys "github.com/cosmos/evm/client/keys"
-	"github.com/cosmos/evm/crypto/hd"
+	clientkeys "github.com/silcprotocol/silcchain/client/keys"
+	"github.com/silcprotocol/silcchain/crypto/hd"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

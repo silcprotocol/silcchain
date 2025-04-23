@@ -6,9 +6,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/precompiles/erc20"
-	"github.com/cosmos/evm/precompiles/werc20"
-	"github.com/cosmos/evm/x/erc20/types"
+	"github.com/silcprotocol/silcchain/precompiles/erc20"
+	"github.com/silcprotocol/silcchain/precompiles/werc20"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
 
 	errorsmod "cosmossdk.io/errors"
 

@@ -10,8 +10,8 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	gethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/cosmos/evm/server/config"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/server/config"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	errorsmod "cosmossdk.io/errors"
 

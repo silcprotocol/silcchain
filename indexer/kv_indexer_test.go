@@ -12,12 +12,12 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	"github.com/cosmos/evm/indexer"
-	"github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	"github.com/silcprotocol/silcchain/indexer"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/log"
 

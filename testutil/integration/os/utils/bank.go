@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	cmnfactory "github.com/cosmos/evm/testutil/integration/common/factory"
-	cmnnet "github.com/cosmos/evm/testutil/integration/common/network"
-	"github.com/cosmos/evm/testutil/integration/os/keyring"
+	cmnfactory "github.com/silcprotocol/silcchain/testutil/integration/common/factory"
+	cmnnet "github.com/silcprotocol/silcchain/testutil/integration/common/network"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
 
 	"cosmossdk.io/math"
 

@@ -7,12 +7,12 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/distribution"
-	"github.com/cosmos/evm/precompiles/testutil"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	utiltx "github.com/cosmos/evm/testutil/tx"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/distribution"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
 
 	"cosmossdk.io/math"
 

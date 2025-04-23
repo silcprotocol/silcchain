@@ -13,12 +13,12 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/evm/crypto/ethsecp256k1"
-	"github.com/cosmos/evm/encoding"
-	exampleapp "github.com/cosmos/evm/evmd"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
+	"github.com/silcprotocol/silcchain/encoding"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	sdkmath "cosmossdk.io/math"
 

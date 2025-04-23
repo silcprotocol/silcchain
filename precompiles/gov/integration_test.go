@@ -12,12 +12,12 @@ import (
 	//nolint:revive // dot imports are fine for Ginkgo
 	. "github.com/onsi/gomega"
 
-	"github.com/cosmos/evm/precompiles/gov"
-	"github.com/cosmos/evm/precompiles/gov/testdata"
-	"github.com/cosmos/evm/precompiles/testutil"
-	"github.com/cosmos/evm/testutil/integration/os/factory"
-	testutiltx "github.com/cosmos/evm/testutil/tx"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/precompiles/gov"
+	"github.com/silcprotocol/silcchain/precompiles/gov/testdata"
+	"github.com/silcprotocol/silcchain/precompiles/testutil"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
+	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

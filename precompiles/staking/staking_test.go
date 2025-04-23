@@ -9,13 +9,13 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	chainutil "github.com/cosmos/evm/evmd/testutil"
-	"github.com/cosmos/evm/precompiles/authorization"
-	"github.com/cosmos/evm/precompiles/staking"
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/x/vm/statedb"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	"github.com/silcprotocol/silcchain/precompiles/staking"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"cosmossdk.io/math"
 

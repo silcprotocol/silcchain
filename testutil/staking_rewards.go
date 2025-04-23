@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	app "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/testutil/constants"
-	testutiltx "github.com/cosmos/evm/testutil/tx"
+	app "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/testutil/constants"
+	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
 
 	"cosmossdk.io/math"
 

@@ -8,9 +8,9 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/evm/ibc"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/ibc"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	"github.com/cosmos/cosmos-sdk/x/authz"
 )

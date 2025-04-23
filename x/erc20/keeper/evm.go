@@ -7,9 +7,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/evm/contracts"
-	"github.com/cosmos/evm/x/erc20/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/contracts"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	errorsmod "cosmossdk.io/errors"
 

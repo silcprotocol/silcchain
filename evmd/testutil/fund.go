@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	"github.com/cosmos/evm/testutil/constants"
+	"github.com/silcprotocol/silcchain/testutil/constants"
 
 	"cosmossdk.io/math"
 

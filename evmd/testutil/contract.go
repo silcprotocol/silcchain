@@ -11,9 +11,9 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	exampleapp "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/testutil/tx"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/testutil/tx"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	"github.com/cosmos/gogoproto/proto"
 
 	"github.com/cosmos/cosmos-sdk/codec"

@@ -3,10 +3,10 @@ package encoding
 import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	enccodec "github.com/cosmos/evm/encoding/codec"
-	"github.com/cosmos/evm/ethereum/eip712"
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	enccodec "github.com/silcprotocol/silcchain/encoding/codec"
+	"github.com/silcprotocol/silcchain/ethereum/eip712"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	"github.com/cosmos/gogoproto/proto"
 
 	"cosmossdk.io/x/tx/signing"

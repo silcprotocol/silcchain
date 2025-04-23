@@ -6,9 +6,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	cmn "github.com/cosmos/evm/precompiles/common"
-	"github.com/cosmos/evm/precompiles/distribution"
-	testutiltx "github.com/cosmos/evm/testutil/tx"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	"github.com/silcprotocol/silcchain/precompiles/distribution"
+	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
 
 	"cosmossdk.io/math"
 

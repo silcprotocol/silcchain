@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	testkeyring "github.com/cosmos/evm/testutil/integration/os/keyring"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 )
 
 func (suite *KeeperTestSuite) TestEndBlock() {

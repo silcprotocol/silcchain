@@ -3,8 +3,8 @@ package ibc
 import (
 	"strings"
 
-	"github.com/cosmos/evm/utils"
-	transferkeeper "github.com/cosmos/evm/x/ibc/transfer/keeper"
+	"github.com/silcprotocol/silcchain/utils"
+	transferkeeper "github.com/silcprotocol/silcchain/x/ibc/transfer/keeper"
 	transfertypes "github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"
 	channeltypes "github.com/cosmos/ibc-go/v8/modules/core/04-channel/types"
 

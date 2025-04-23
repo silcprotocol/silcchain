@@ -8,9 +8,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	cmn "github.com/cosmos/evm/precompiles/common"
-	evmkeeper "github.com/cosmos/evm/x/vm/keeper"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	evmkeeper "github.com/silcprotocol/silcchain/x/vm/keeper"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	storetypes "cosmossdk.io/store/types"
 

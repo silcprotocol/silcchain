@@ -9,9 +9,9 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	rpctypes "github.com/cosmos/evm/rpc/types"
-	cosmosevmtypes "github.com/cosmos/evm/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	rpctypes "github.com/silcprotocol/silcchain/rpc/types"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"

@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	testconstants "github.com/cosmos/evm/testutil/constants"
-	"github.com/cosmos/evm/x/erc20/types"
+	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

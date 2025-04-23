@@ -9,8 +9,8 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/cosmos/evm/server/config"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/server/config"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	errorsmod "cosmossdk.io/errors"
 

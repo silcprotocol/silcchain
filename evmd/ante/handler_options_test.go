@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/evm/ante"
-	ethante "github.com/cosmos/evm/ante/evm"
-	chainante "github.com/cosmos/evm/evmd/ante"
-	"github.com/cosmos/evm/testutil/integration/os/network"
-	"github.com/cosmos/evm/types"
+	"github.com/silcprotocol/silcchain/ante"
+	ethante "github.com/silcprotocol/silcchain/ante/evm"
+	chainante "github.com/silcprotocol/silcchain/evmd/ante"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
+	"github.com/silcprotocol/silcchain/types"
 )
 
 func TestValidateHandlerOptions(t *testing.T) {

@@ -3,10 +3,10 @@ package evm_test
 import (
 	"math/big"
 
-	evmante "github.com/cosmos/evm/ante/evm"
-	"github.com/cosmos/evm/testutil"
-	testutiltx "github.com/cosmos/evm/testutil/tx"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	evmante "github.com/silcprotocol/silcchain/ante/evm"
+	"github.com/silcprotocol/silcchain/testutil"
+	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	storetypes "cosmossdk.io/store/types"
 

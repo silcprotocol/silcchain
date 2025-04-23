@@ -8,8 +8,8 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	app "github.com/cosmos/evm/evmd"
-	"github.com/cosmos/evm/testutil/tx"
+	app "github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/testutil/tx"
 
 	errorsmod "cosmossdk.io/errors"
 	sdkmath "cosmossdk.io/math"

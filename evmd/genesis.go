@@ -3,8 +3,8 @@ package evmd
 import (
 	"encoding/json"
 
-	erc20types "github.com/cosmos/evm/x/erc20/types"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 )

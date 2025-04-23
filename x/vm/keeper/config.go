@@ -5,8 +5,8 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/x/vm/statedb"
-	"github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/x/vm/statedb"
+	"github.com/silcprotocol/silcchain/x/vm/types"
 
 	errorsmod "cosmossdk.io/errors"
 

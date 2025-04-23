@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	feemarkettypes "github.com/cosmos/evm/x/feemarket/types"
+	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"
 
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/math"

@@ -8,11 +8,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/cosmos/evm/precompiles/authorization"
-	cmn "github.com/cosmos/evm/precompiles/common"
-	transferkeeper "github.com/cosmos/evm/x/ibc/transfer/keeper"
-	evmkeeper "github.com/cosmos/evm/x/vm/keeper"
-	evmtypes "github.com/cosmos/evm/x/vm/types"
+	"github.com/silcprotocol/silcchain/precompiles/authorization"
+	cmn "github.com/silcprotocol/silcchain/precompiles/common"
+	transferkeeper "github.com/silcprotocol/silcchain/x/ibc/transfer/keeper"
+	evmkeeper "github.com/silcprotocol/silcchain/x/vm/keeper"
+	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 	channelkeeper "github.com/cosmos/ibc-go/v8/modules/core/04-channel/keeper"
 
 	storetypes "cosmossdk.io/store/types"

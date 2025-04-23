@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"fmt"
 
-	exampleapp "github.com/cosmos/evm/evmd"
-	utiltx "github.com/cosmos/evm/testutil/tx"
-	"github.com/cosmos/evm/x/erc20/types"
+	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
+	"github.com/silcprotocol/silcchain/x/erc20/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"

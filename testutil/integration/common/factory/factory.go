@@ -1,8 +1,8 @@
 package factory
 
 import (
-	"github.com/cosmos/evm/testutil/integration/os/grpc"
-	"github.com/cosmos/evm/testutil/integration/os/network"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
+	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
 )
 
 const (

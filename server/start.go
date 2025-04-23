@@ -29,12 +29,12 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	"github.com/cosmos/evm/cmd/evmd/config"
-	"github.com/cosmos/evm/indexer"
-	ethdebug "github.com/cosmos/evm/rpc/namespaces/ethereum/debug"
-	cosmosevmserverconfig "github.com/cosmos/evm/server/config"
-	srvflags "github.com/cosmos/evm/server/flags"
-	cosmosevmtypes "github.com/cosmos/evm/types"
+	"github.com/silcprotocol/silcchain/cmd/evmd/config"
+	"github.com/silcprotocol/silcchain/indexer"
+	ethdebug "github.com/silcprotocol/silcchain/rpc/namespaces/ethereum/debug"
+	cosmosevmserverconfig "github.com/silcprotocol/silcchain/server/config"
+	srvflags "github.com/silcprotocol/silcchain/server/flags"
+	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 
 	errorsmod "cosmossdk.io/errors"
 	pruningtypes "cosmossdk.io/store/pruning/types"
