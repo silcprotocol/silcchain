@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cosmos/evm/cmd/evmd/cmd"
-	evmdconfig "github.com/cosmos/evm/cmd/evmd/config"
-	examplechain "github.com/cosmos/evm/evmd"
+	"github.com/silcprotocol/silcchain/cmd/evmd/cmd"
+	evmdconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	examplechain "github.com/silcprotocol/silcchain/evmd"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	sdk "github.com/cosmos/cosmos-sdk/types"

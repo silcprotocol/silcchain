@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/cosmos/evm/types"
+	"github.com/silcprotocol/silcchain/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
