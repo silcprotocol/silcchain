@@ -209,7 +209,7 @@ func InitAppConfig(denom string) (string, interface{}) {
 	return customAppTemplate, customAppConfig
 }
 
-func initRootCmd(rootCmd *cobra.Command, osApp *silcd.EVMD) {
+func initRootCmd(rootCmd *cobra.Command, osApp *silcd.SILCD) {
 	cfg := sdk.GetConfig()
 	cfg.Seal()
 
@@ -384,7 +384,7 @@ func appExport(
 	appOpts servertypes.AppOptions,
 	modulesToExport []string,
 ) (servertypes.ExportedApp, error) {
-	var exampleApp *silcd.EVMD
+	var exampleApp *silcd.SILCD
 
 	// this check is necessary as we use the flag in x/upgrade.
 	// we can exit more gracefully by checking the flag here.

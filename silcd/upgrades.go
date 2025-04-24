@@ -1,5 +1,5 @@
 package silcd
 
-func (app EVMD) RegisterUpgradeHandlers() {
+func (app SILCD) RegisterUpgradeHandlers() {
 	// No upgrades registered yet
 }

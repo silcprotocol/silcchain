@@ -165,14 +165,14 @@ var (
 )
 
 var (
-	_ runtime.AppI            = (*EVMD)(nil)
-	_ servertypes.Application = (*EVMD)(nil)
+	_ runtime.AppI            = (*SILCD)(nil)
+	_ servertypes.Application = (*SILCD)(nil)
 )
 
-// EVMD extends an ABCI application, but with most of its parameters exported.
+// SILCD extends an ABCI application, but with most of its parameters exported.
 // They are exported for convenience in creating helper functions, as object
 // capabilities aren't needed for testing.
-type EVMD struct {
+type SILCD struct {
 	*baseapp.BaseApp
 
 	legacyAmino       *codec.LegacyAmino
@@ -223,7 +223,7 @@ type EVMD struct {
 	configurator module.Configurator
 }
 
-// NewExampleApp returns a reference to an initialized EVMD.
+// NewExampleApp returns a reference to an initialized SILCD.
 func NewExampleApp(
 	logger log.Logger,
 	db dbm.DB,
@@ -232,7 +232,7 @@ func NewExampleApp(
 	appOpts servertypes.AppOptions,
 	evmAppOptions EVMOptionsFn,
 	baseAppOptions ...func(*baseapp.BaseApp),
-) *EVMD {
+) *SILCD {
 	encodingConfig := evmosencoding.MakeConfig()
 
 	appCodec := encodingConfig.Codec
@@ -310,7 +310,7 @@ func NewExampleApp(
 		panic("version db not supported in this example chain")
 	}
 
-	app := &EVMD{
+	app := &SILCD{
 		BaseApp:           bApp,
 		legacyAmino:       legacyAmino,
 		appCodec:          appCodec,
@@ -796,7 +796,7 @@ func NewExampleApp(
 	return app
 }
 
-func (app *EVMD) setAnteHandler(txConfig client.TxConfig, maxGasWanted uint64) {
+func (app *SILCD) setAnteHandler(txConfig client.TxConfig, maxGasWanted uint64) {
 	options := chainante.HandlerOptions{
 		Cdc:                    app.appCodec,
 		AccountKeeper:          app.AccountKeeper,
@@ -818,7 +818,7 @@ func (app *EVMD) setAnteHandler(txConfig client.TxConfig, maxGasWanted uint64) {
 	app.SetAnteHandler(chainante.NewAnteHandler(options))
 }
 
-func (app *EVMD) setPostHandler() {
+func (app *SILCD) setPostHandler() {
 	postHandler, err := posthandler.NewPostHandler(
 		posthandler.HandlerOptions{},
 	)
@@ -830,28 +830,28 @@ func (app *EVMD) setPostHandler() {
 }
 
 // Name returns the name of the App
-func (app *EVMD) Name() string { return app.BaseApp.Name() }
+func (app *SILCD) Name() string { return app.BaseApp.Name() }
 
 // BeginBlocker application updates every begin block
-func (app *EVMD) BeginBlocker(ctx sdk.Context) (sdk.BeginBlock, error) {
+func (app *SILCD) BeginBlocker(ctx sdk.Context) (sdk.BeginBlock, error) {
 	return app.ModuleManager.BeginBlock(ctx)
 }
 
 // EndBlocker application updates every end block
-func (app *EVMD) EndBlocker(ctx sdk.Context) (sdk.EndBlock, error) {
+func (app *SILCD) EndBlocker(ctx sdk.Context) (sdk.EndBlock, error) {
 	return app.ModuleManager.EndBlock(ctx)
 }
 
-func (app *EVMD) FinalizeBlock(req *abci.RequestFinalizeBlock) (res *abci.ResponseFinalizeBlock, err error) {
+func (app *SILCD) FinalizeBlock(req *abci.RequestFinalizeBlock) (res *abci.ResponseFinalizeBlock, err error) {
 	return app.BaseApp.FinalizeBlock(req)
 }
 
-func (app *EVMD) Configurator() module.Configurator {
+func (app *SILCD) Configurator() module.Configurator {
 	return app.configurator
 }
 
 // InitChainer application update at chain initialization
-func (app *EVMD) InitChainer(ctx sdk.Context, req *abci.RequestInitChain) (*abci.ResponseInitChain, error) {
+func (app *SILCD) InitChainer(ctx sdk.Context, req *abci.RequestInitChain) (*abci.ResponseInitChain, error) {
 	var genesisState cosmosevmtypes.GenesisState
 	if err := json.Unmarshal(req.AppStateBytes, &genesisState); err != nil {
 		panic(err)
@@ -864,43 +864,43 @@ func (app *EVMD) InitChainer(ctx sdk.Context, req *abci.RequestInitChain) (*abci
 	return app.ModuleManager.InitGenesis(ctx, app.appCodec, genesisState)
 }
 
-func (app *EVMD) PreBlocker(ctx sdk.Context, _ *abci.RequestFinalizeBlock) (*sdk.ResponsePreBlock, error) {
+func (app *SILCD) PreBlocker(ctx sdk.Context, _ *abci.RequestFinalizeBlock) (*sdk.ResponsePreBlock, error) {
 	return app.ModuleManager.PreBlock(ctx)
 }
 
 // LoadHeight loads a particular height
-func (app *EVMD) LoadHeight(height int64) error {
+func (app *SILCD) LoadHeight(height int64) error {
 	return app.LoadVersion(height)
 }
 
-// LegacyAmino returns EVMD's amino codec.
+// LegacyAmino returns SILCD's amino codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *EVMD) LegacyAmino() *codec.LegacyAmino {
+func (app *SILCD) LegacyAmino() *codec.LegacyAmino {
 	return app.legacyAmino
 }
 
-// AppCodec returns EVMD's app codec.
+// AppCodec returns SILCD's app codec.
 //
 // NOTE: This is solely to be used for testing purposes as it may be desirable
 // for modules to register their own custom testing types.
-func (app *EVMD) AppCodec() codec.Codec {
+func (app *SILCD) AppCodec() codec.Codec {
 	return app.appCodec
 }
 
-// InterfaceRegistry returns EVMD's InterfaceRegistry
-func (app *EVMD) InterfaceRegistry() types.InterfaceRegistry {
+// InterfaceRegistry returns SILCD's InterfaceRegistry
+func (app *SILCD) InterfaceRegistry() types.InterfaceRegistry {
 	return app.interfaceRegistry
 }
 
-// TxConfig returns EVMD's TxConfig
-func (app *EVMD) TxConfig() client.TxConfig {
+// TxConfig returns SILCD's TxConfig
+func (app *SILCD) TxConfig() client.TxConfig {
 	return app.txConfig
 }
 
 // DefaultGenesis returns a default genesis from the registered AppModuleBasic's.
-func (app *EVMD) DefaultGenesis() map[string]json.RawMessage {
+func (app *SILCD) DefaultGenesis() map[string]json.RawMessage {
 	genesis := app.BasicModuleManager.DefaultGenesis(app.appCodec)
 
 	mintGenState := NewMintGenesisState()
@@ -920,40 +920,40 @@ func (app *EVMD) DefaultGenesis() map[string]json.RawMessage {
 // GetKey returns the KVStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *EVMD) GetKey(storeKey string) *storetypes.KVStoreKey {
+func (app *SILCD) GetKey(storeKey string) *storetypes.KVStoreKey {
 	return app.keys[storeKey]
 }
 
 // GetTKey returns the TransientStoreKey for the provided store key.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *EVMD) GetTKey(storeKey string) *storetypes.TransientStoreKey {
+func (app *SILCD) GetTKey(storeKey string) *storetypes.TransientStoreKey {
 	return app.tkeys[storeKey]
 }
 
 // GetMemKey returns the MemStoreKey for the provided mem key.
 //
 // NOTE: This is solely used for testing purposes.
-func (app *EVMD) GetMemKey(storeKey string) *storetypes.MemoryStoreKey {
+func (app *SILCD) GetMemKey(storeKey string) *storetypes.MemoryStoreKey {
 	return app.memKeys[storeKey]
 }
 
 // GetSubspace returns a param subspace for a given module name.
 //
 // NOTE: This is solely to be used for testing purposes.
-func (app *EVMD) GetSubspace(moduleName string) paramstypes.Subspace {
+func (app *SILCD) GetSubspace(moduleName string) paramstypes.Subspace {
 	subspace, _ := app.ParamsKeeper.GetSubspace(moduleName)
 	return subspace
 }
 
 // SimulationManager implements the SimulationApp interface
-func (app *EVMD) SimulationManager() *module.SimulationManager {
+func (app *SILCD) SimulationManager() *module.SimulationManager {
 	return app.sm
 }
 
 // RegisterAPIRoutes registers all application module routes with the provided
 // API server.
-func (app *EVMD) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
+func (app *SILCD) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfig) {
 	clientCtx := apiSvr.ClientCtx
 	// Register new tx routes from grpc-gateway.
 	authtx.RegisterGRPCGatewayRoutes(clientCtx, apiSvr.GRPCGatewayRouter)
@@ -974,12 +974,12 @@ func (app *EVMD) RegisterAPIRoutes(apiSvr *api.Server, apiConfig config.APIConfi
 }
 
 // RegisterTxService implements the Application.RegisterTxService method.
-func (app *EVMD) RegisterTxService(clientCtx client.Context) {
+func (app *SILCD) RegisterTxService(clientCtx client.Context) {
 	authtx.RegisterTxService(app.GRPCQueryRouter(), clientCtx, app.BaseApp.Simulate, app.interfaceRegistry)
 }
 
 // RegisterTendermintService implements the Application.RegisterTendermintService method.
-func (app *EVMD) RegisterTendermintService(clientCtx client.Context) {
+func (app *SILCD) RegisterTendermintService(clientCtx client.Context) {
 	cmtservice.RegisterTendermintService(
 		clientCtx,
 		app.BaseApp.GRPCQueryRouter(),
@@ -988,7 +988,7 @@ func (app *EVMD) RegisterTendermintService(clientCtx client.Context) {
 	)
 }
 
-func (app *EVMD) RegisterNodeService(clientCtx client.Context, cfg config.Config) {
+func (app *SILCD) RegisterNodeService(clientCtx client.Context, cfg config.Config) {
 	node.RegisterNodeService(clientCtx, app.GRPCQueryRouter(), cfg)
 }
 
@@ -997,37 +997,37 @@ func (app *EVMD) RegisterNodeService(clientCtx client.Context, cfg config.Config
 //
 
 // GetBaseApp implements the TestingApp interface.
-func (app *EVMD) GetBaseApp() *baseapp.BaseApp {
+func (app *SILCD) GetBaseApp() *baseapp.BaseApp {
 	return app.BaseApp
 }
 
 // GetStakingKeeper implements the TestingApp interface.
-func (app *EVMD) GetStakingKeeper() ibctestingtypes.StakingKeeper {
+func (app *SILCD) GetStakingKeeper() ibctestingtypes.StakingKeeper {
 	return app.StakingKeeper
 }
 
 // GetStakingKeeperSDK implements the TestingApp interface.
-func (app *EVMD) GetStakingKeeperSDK() stakingkeeper.Keeper {
+func (app *SILCD) GetStakingKeeperSDK() stakingkeeper.Keeper {
 	return *app.StakingKeeper
 }
 
 // GetIBCKeeper implements the TestingApp interface.
-func (app *EVMD) GetIBCKeeper() *ibckeeper.Keeper {
+func (app *SILCD) GetIBCKeeper() *ibckeeper.Keeper {
 	return app.IBCKeeper
 }
 
 // GetScopedIBCKeeper implements the TestingApp interface.
-func (app *EVMD) GetScopedIBCKeeper() capabilitykeeper.ScopedKeeper {
+func (app *SILCD) GetScopedIBCKeeper() capabilitykeeper.ScopedKeeper {
 	return app.scopedIBCKeeper
 }
 
 // GetTxConfig implements the TestingApp interface.
-func (app *EVMD) GetTxConfig() client.TxConfig {
+func (app *SILCD) GetTxConfig() client.TxConfig {
 	return app.txConfig
 }
 
 // AutoCliOpts returns the autocli options for the app.
-func (app *EVMD) AutoCliOpts() autocli.AppOptions {
+func (app *SILCD) AutoCliOpts() autocli.AppOptions {
 	modules := make(map[string]appmodule.AppModule, 0)
 	for _, m := range app.ModuleManager.Modules {
 		if moduleWithName, ok := m.(module.HasName); ok {

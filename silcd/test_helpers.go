@@ -47,7 +47,7 @@ func init() {
 	config.SetBip44CoinType(cfg)
 }
 
-func setup(withGenesis bool, invCheckPeriod uint, chainID string) (*EVMD, GenesisState) {
+func setup(withGenesis bool, invCheckPeriod uint, chainID string) (*SILCD, GenesisState) {
 	db := dbm.NewMemDB()
 
 	appOptions := make(simtestutil.AppOptionsMap, 0)
@@ -62,8 +62,8 @@ func setup(withGenesis bool, invCheckPeriod uint, chainID string) (*EVMD, Genesi
 	return app, GenesisState{}
 }
 
-// Setup initializes a new EVMD. A Nop logger is set in EVMD.
-func Setup(t *testing.T, chainID string) *EVMD {
+// Setup initializes a new SILCD. A Nop logger is set in SILCD.
+func Setup(t *testing.T, chainID string) *SILCD {
 	t.Helper()
 
 	privVal := mock.NewPV()
@@ -87,11 +87,11 @@ func Setup(t *testing.T, chainID string) *EVMD {
 	return app
 }
 
-// SetupWithGenesisValSet initializes a new EVMD with a validator set and genesis accounts
+// SetupWithGenesisValSet initializes a new SILCD with a validator set and genesis accounts
 // that also act as delegators. For simplicity, each validator is bonded with a delegation
 // of one consensus engine unit in the default token of the simapp from first genesis
-// account. A Nop logger is set in EVMD.
-func SetupWithGenesisValSet(t *testing.T, chainID string, valSet *cmttypes.ValidatorSet, genAccs []authtypes.GenesisAccount, balances ...banktypes.Balance) *EVMD {
+// account. A Nop logger is set in SILCD.
+func SetupWithGenesisValSet(t *testing.T, chainID string, valSet *cmttypes.ValidatorSet, genAccs []authtypes.GenesisAccount, balances ...banktypes.Balance) *SILCD {
 	t.Helper()
 
 	app, genesisState := setup(true, 5, chainID)
