@@ -5,15 +5,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
-	"github.com/silcprotocol/silcchain/evmd"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/silcd/config"
+	"github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 )
 
 func TestRequireSameTestDenom(t *testing.T) {
 	require.Equal(t,
 		constants.ExampleAttoDenom,
-		evmd.ExampleChainDenom,
+		silcd.ExampleChainDenom,
 		"test denoms should be the same across the repo",
 	)
 }
@@ -29,7 +29,7 @@ func TestRequireSameTestBech32Prefix(t *testing.T) {
 func TestRequireSameWEVMOSMainnet(t *testing.T) {
 	require.Equal(t,
 		constants.WEVMOSContractMainnet,
-		evmd.WEVMOSContractMainnet,
+		silcd.WEVMOSContractMainnet,
 		"wevmos contract addresses should be the same across the repo",
 	)
 }

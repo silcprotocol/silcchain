@@ -1,4 +1,4 @@
-package evmd
+package silcd
 
 const (
 	// ExampleChainDenom is the denomination of the Cosmos EVM example chain's base coin.

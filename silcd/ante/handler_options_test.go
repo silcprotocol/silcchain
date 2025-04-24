@@ -7,7 +7,7 @@ import (
 
 	"github.com/silcprotocol/silcchain/ante"
 	ethante "github.com/silcprotocol/silcchain/ante/evm"
-	chainante "github.com/silcprotocol/silcchain/evmd/ante"
+	chainante "github.com/silcprotocol/silcchain/silcd/ante"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
 	"github.com/silcprotocol/silcchain/types"
 )

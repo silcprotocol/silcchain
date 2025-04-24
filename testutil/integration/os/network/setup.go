@@ -10,7 +10,7 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
 	feemarkettypes "github.com/silcprotocol/silcchain/x/feemarket/types"

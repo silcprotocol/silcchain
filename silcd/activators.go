@@ -1,9 +1,9 @@
-package evmd
+package silcd
 
 import (
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	"github.com/silcprotocol/silcchain/evmd/eips"
+	"github.com/silcprotocol/silcchain/silcd/eips"
 )
 
 // cosmosEVMActivators defines a map of opcode modifiers associated

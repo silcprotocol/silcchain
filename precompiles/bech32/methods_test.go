@@ -5,7 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/silcd/config"
 	"github.com/silcprotocol/silcchain/precompiles/bech32"
 	cmn "github.com/silcprotocol/silcchain/precompiles/common"
 

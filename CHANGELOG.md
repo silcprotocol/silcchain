@@ -4,7 +4,7 @@
 
 ### DEPENDENCIES
 
-- [\#31](https://github.com/silcprotocol/silcchain/pull/31) Migrated example_chain to evmd
+- [\#31](https://github.com/silcprotocol/silcchain/pull/31) Migrated example_chain to silcd
 - Migrated evmos/go-ethereum to cosmos/go-ethereum
 - Migrated evmos/cosmos-sdk to cosmos/cosmos-sdk
 

@@ -7,8 +7,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	app "github.com/silcprotocol/silcchain/evmd"
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	app "github.com/silcprotocol/silcchain/silcd"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	auth "github.com/silcprotocol/silcchain/precompiles/authorization"
 	"github.com/silcprotocol/silcchain/precompiles/erc20"
 	"github.com/cosmos/ibc-go/v8/modules/apps/transfer/types"

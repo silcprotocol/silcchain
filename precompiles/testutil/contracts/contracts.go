@@ -10,8 +10,8 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 
 	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	precompiletestutil "github.com/silcprotocol/silcchain/precompiles/testutil"
 	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"
 

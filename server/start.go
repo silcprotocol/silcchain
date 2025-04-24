@@ -29,7 +29,7 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 
 	dbm "github.com/cosmos/cosmos-db"
-	"github.com/silcprotocol/silcchain/cmd/evmd/config"
+	"github.com/silcprotocol/silcchain/cmd/silcd/config"
 	"github.com/silcprotocol/silcchain/indexer"
 	ethdebug "github.com/silcprotocol/silcchain/rpc/namespaces/ethereum/debug"
 	cosmosevmserverconfig "github.com/silcprotocol/silcchain/server/config"

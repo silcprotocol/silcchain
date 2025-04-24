@@ -15,7 +15,7 @@ import (
 
 	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
 	"github.com/silcprotocol/silcchain/encoding"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
 	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
 	"github.com/silcprotocol/silcchain/x/vm/types"

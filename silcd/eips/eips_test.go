@@ -13,8 +13,8 @@ import (
 	//nolint:revive // dot imports are fine for Ginkgo
 	. "github.com/onsi/gomega"
 
-	"github.com/silcprotocol/silcchain/evmd/eips"
-	"github.com/silcprotocol/silcchain/evmd/eips/testdata"
+	"github.com/silcprotocol/silcchain/silcd/eips"
+	"github.com/silcprotocol/silcchain/silcd/eips/testdata"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/keyring"

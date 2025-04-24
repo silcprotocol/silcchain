@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"fmt"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	utiltx "github.com/silcprotocol/silcchain/testutil/tx"
 	"github.com/silcprotocol/silcchain/x/erc20/types"
 

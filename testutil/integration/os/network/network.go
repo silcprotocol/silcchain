@@ -15,8 +15,8 @@ import (
 	cmttypes "github.com/cometbft/cometbft/types"
 	"github.com/cometbft/cometbft/version"
 
-	app "github.com/silcprotocol/silcchain/evmd"
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	app "github.com/silcprotocol/silcchain/silcd"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	commonnetwork "github.com/silcprotocol/silcchain/testutil/integration/common/network"
 	"github.com/silcprotocol/silcchain/types"
 	erc20types "github.com/silcprotocol/silcchain/x/erc20/types"

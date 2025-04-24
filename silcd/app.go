@@ -1,4 +1,4 @@
-package evmd
+package silcd
 
 import (
 	"encoding/json"
@@ -21,7 +21,7 @@ import (
 	evmante "github.com/silcprotocol/silcchain/ante"
 	cosmosevmante "github.com/silcprotocol/silcchain/ante/evm"
 	evmosencoding "github.com/silcprotocol/silcchain/encoding"
-	chainante "github.com/silcprotocol/silcchain/evmd/ante"
+	chainante "github.com/silcprotocol/silcchain/silcd/ante"
 	srvflags "github.com/silcprotocol/silcchain/server/flags"
 	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 	cosmosevmutils "github.com/silcprotocol/silcchain/utils"
@@ -135,13 +135,13 @@ func init() {
 
 	// get the user's home directory
 	var err error
-	DefaultNodeHome, err = clienthelpers.GetNodeHomeDirectory(".evmd")
+	DefaultNodeHome, err = clienthelpers.GetNodeHomeDirectory(".silcd")
 	if err != nil {
 		panic(err)
 	}
 }
 
-const appName = "evmd"
+const appName = "silcd"
 
 var (
 	// DefaultNodeHome default home directories for the application daemon

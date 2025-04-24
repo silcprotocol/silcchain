@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
 	"github.com/silcprotocol/silcchain/x/erc20/types"
 )

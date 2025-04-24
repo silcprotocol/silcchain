@@ -8,7 +8,7 @@ import (
 
 	cryptocodec "github.com/silcprotocol/silcchain/crypto/codec"
 	"github.com/silcprotocol/silcchain/ethereum/eip712"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/types"
 
 	"github.com/cosmos/cosmos-sdk/client"

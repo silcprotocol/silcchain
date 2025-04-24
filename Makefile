@@ -5,7 +5,7 @@ VERSION ?= $(shell echo $(shell git describe --tags --always) | sed 's/^v//')
 TMVERSION := $(shell go list -m github.com/cometbft/cometbft | sed 's:.* ::')
 COMMIT := $(shell git log -1 --format='%H')
 BINDIR ?= $(GOPATH)/bin
-EXAMPLE_BINARY = evmd
+EXAMPLE_BINARY = silcd
 BUILDDIR ?= $(CURDIR)/build
 HTTPS_GIT := https://github.com/silcprotocol/silcchain.git
 DOCKER := $(shell which docker)
@@ -18,7 +18,7 @@ default_target: all
 .PHONY: build default_target
 
 ###############################################################################
-###                          evmd Build & Install                           ###
+###                          silcd Build & Install                           ###
 ###############################################################################
 
 # process build tags

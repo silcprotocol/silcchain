@@ -11,7 +11,7 @@ import (
 	tmversion "github.com/cometbft/cometbft/proto/tendermint/version"
 	"github.com/cometbft/cometbft/version"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/network"
 	utiltx "github.com/silcprotocol/silcchain/testutil/tx"

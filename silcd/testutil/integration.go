@@ -6,7 +6,7 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 
 	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/math"

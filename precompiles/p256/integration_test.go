@@ -14,7 +14,7 @@ import (
 
 	"github.com/cometbft/cometbft/crypto"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/precompiles/p256"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"

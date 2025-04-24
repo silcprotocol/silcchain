@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	app "github.com/silcprotocol/silcchain/evmd"
+	app "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	testutiltx "github.com/silcprotocol/silcchain/testutil/tx"
 

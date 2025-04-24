@@ -10,8 +10,8 @@ import (
 	abci "github.com/cometbft/cometbft/abci/types"
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v8/testing"

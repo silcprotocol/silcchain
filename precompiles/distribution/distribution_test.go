@@ -8,7 +8,7 @@ import (
 	gethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	"github.com/silcprotocol/silcchain/precompiles/distribution"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	evmtypes "github.com/silcprotocol/silcchain/x/vm/types"

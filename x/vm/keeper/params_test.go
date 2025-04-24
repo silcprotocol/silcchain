@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/x/vm/types"
 )
 

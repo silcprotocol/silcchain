@@ -14,7 +14,7 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	cmttypes "github.com/cometbft/cometbft/types"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
 	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"

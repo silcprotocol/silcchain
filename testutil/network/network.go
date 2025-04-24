@@ -27,9 +27,9 @@ import (
 	cmtclient "github.com/cometbft/cometbft/rpc/client"
 
 	dbm "github.com/cosmos/cosmos-db"
-	chaincmd "github.com/silcprotocol/silcchain/cmd/evmd/cmd"
+	chaincmd "github.com/silcprotocol/silcchain/cmd/silcd/cmd"
 	"github.com/silcprotocol/silcchain/crypto/hd"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/server/config"
 	testconstants "github.com/silcprotocol/silcchain/testutil/constants"
 	cosmosevmtypes "github.com/silcprotocol/silcchain/types"
@@ -340,7 +340,7 @@ func New(l Logger, baseDir string, cfg Config) (*Network, error) {
 		ctx.Logger = logger
 
 		nodeDirName := fmt.Sprintf("node%d", i)
-		nodeDir := filepath.Join(network.BaseDir, nodeDirName, "evmd")
+		nodeDir := filepath.Join(network.BaseDir, nodeDirName, "silcd")
 		clientDir := filepath.Join(network.BaseDir, nodeDirName, "evmoscli")
 		gentxsDir := filepath.Join(network.BaseDir, "gentxs")
 

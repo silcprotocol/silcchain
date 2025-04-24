@@ -1,7 +1,7 @@
 package utils
 
 import (
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	testkeyring "github.com/silcprotocol/silcchain/testutil/integration/os/keyring"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/network"

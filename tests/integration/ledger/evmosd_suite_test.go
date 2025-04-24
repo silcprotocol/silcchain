@@ -26,7 +26,7 @@ import (
 	clientkeys "github.com/silcprotocol/silcchain/client/keys"
 	"github.com/silcprotocol/silcchain/crypto/hd"
 	cosmosevmkeyring "github.com/silcprotocol/silcchain/crypto/keyring"
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/tests/integration/ledger/mocks"
 	"github.com/silcprotocol/silcchain/testutil/constants"
 	utiltx "github.com/silcprotocol/silcchain/testutil/tx"

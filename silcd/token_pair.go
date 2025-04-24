@@ -1,4 +1,4 @@
-package evmd
+package silcd
 
 import erc20types "github.com/silcprotocol/silcchain/x/erc20/types"
 

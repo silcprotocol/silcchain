@@ -14,9 +14,9 @@ import (
 
 	dbm "github.com/cosmos/cosmos-db"
 	cosmosevmcmd "github.com/silcprotocol/silcchain/client"
-	evmdconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	silcdconfig "github.com/silcprotocol/silcchain/cmd/silcd/config"
 	cosmosevmkeyring "github.com/silcprotocol/silcchain/crypto/keyring"
-	"github.com/silcprotocol/silcchain/evmd"
+	"github.com/silcprotocol/silcchain/silcd"
 	cosmosevmserver "github.com/silcprotocol/silcchain/server"
 	cosmosevmserverconfig "github.com/silcprotocol/silcchain/server/config"
 	srvflags "github.com/silcprotocol/silcchain/server/flags"
@@ -57,13 +57,13 @@ func NoOpEvmAppOptions(_ string) error {
 	return nil
 }
 
-// NewRootCmd creates a new root command for evmd. It is called once in the
+// NewRootCmd creates a new root command for silcd. It is called once in the
 // main function.
 func NewRootCmd() *cobra.Command {
 	// we "pre"-instantiate the application for getting the injected/configured encoding configuration
 	// and the CLI options for the modules
 	// add keyring to autocli opts
-	tempApp := evmd.NewExampleApp(
+	tempApp := silcd.NewExampleApp(
 		log.NewNopLogger(),
 		dbm.NewMemDB(),
 		nil,
@@ -87,14 +87,14 @@ func NewRootCmd() *cobra.Command {
 		WithInput(os.Stdin).
 		WithAccountRetriever(authtypes.AccountRetriever{}).
 		WithBroadcastMode(flags.FlagBroadcastMode).
-		WithHomeDir(evmd.DefaultNodeHome).
+		WithHomeDir(silcd.DefaultNodeHome).
 		WithViper(""). // In simapp, we don't use any prefix for env variables.
 		// Cosmos EVM specific setup
 		WithKeyringOptions(cosmosevmkeyring.Option()).
 		WithLedgerHasProtobuf(true)
 
 	rootCmd := &cobra.Command{
-		Use:   "evmd",
+		Use:   "silcd",
 		Short: "exemplary Cosmos EVM app",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			// set the default command outputs
@@ -136,7 +136,7 @@ func NewRootCmd() *cobra.Command {
 				return err
 			}
 
-			customAppTemplate, customAppConfig := InitAppConfig(evmdconfig.BaseDenom)
+			customAppTemplate, customAppConfig := InitAppConfig(silcdconfig.BaseDenom)
 			customTMConfig := initTendermintConfig()
 
 			return sdkserver.InterceptConfigsPreRunHandler(cmd, customAppTemplate, customAppConfig, customTMConfig)
@@ -209,34 +209,34 @@ func InitAppConfig(denom string) (string, interface{}) {
 	return customAppTemplate, customAppConfig
 }
 
-func initRootCmd(rootCmd *cobra.Command, osApp *evmd.EVMD) {
+func initRootCmd(rootCmd *cobra.Command, osApp *silcd.EVMD) {
 	cfg := sdk.GetConfig()
 	cfg.Seal()
 
 	rootCmd.AddCommand(
 		genutilcli.InitCmd(
 			osApp.BasicModuleManager,
-			evmd.DefaultNodeHome,
+			silcd.DefaultNodeHome,
 		),
-		genutilcli.Commands(osApp.TxConfig(), osApp.BasicModuleManager, evmd.DefaultNodeHome),
+		genutilcli.Commands(osApp.TxConfig(), osApp.BasicModuleManager, silcd.DefaultNodeHome),
 		cmtcli.NewCompletionCmd(rootCmd, true),
 		debug.Cmd(),
 		confixcmd.ConfigCommand(),
-		pruning.Cmd(newApp, evmd.DefaultNodeHome),
+		pruning.Cmd(newApp, silcd.DefaultNodeHome),
 		snapshot.Cmd(newApp),
 	)
 
 	// add Cosmos EVM' flavored TM commands to start server, etc.
 	cosmosevmserver.AddCommands(
 		rootCmd,
-		cosmosevmserver.NewDefaultStartOptions(newApp, evmd.DefaultNodeHome),
+		cosmosevmserver.NewDefaultStartOptions(newApp, silcd.DefaultNodeHome),
 		appExport,
 		addModuleInitFlags,
 	)
 
 	// add Cosmos EVM key commands
 	rootCmd.AddCommand(
-		cosmosevmcmd.KeyCommands(evmd.DefaultNodeHome, true),
+		cosmosevmcmd.KeyCommands(silcd.DefaultNodeHome, true),
 	)
 
 	// add keybase, auxiliary RPC, query, genesis, and tx child commands
@@ -365,10 +365,10 @@ func newApp(
 		app.SetProcessProposal(handler.ProcessProposalHandler())
 	})
 
-	return evmd.NewExampleApp(
+	return silcd.NewExampleApp(
 		logger, db, traceStore, true,
 		appOpts,
-		evmd.EvmAppOptions,
+		silcd.EvmAppOptions,
 		baseappOptions...,
 	)
 }
@@ -384,7 +384,7 @@ func appExport(
 	appOpts servertypes.AppOptions,
 	modulesToExport []string,
 ) (servertypes.ExportedApp, error) {
-	var exampleApp *evmd.EVMD
+	var exampleApp *silcd.EVMD
 
 	// this check is necessary as we use the flag in x/upgrade.
 	// we can exit more gracefully by checking the flag here.
@@ -409,13 +409,13 @@ func appExport(
 	}
 
 	if height != -1 {
-		exampleApp = evmd.NewExampleApp(logger, db, traceStore, false, appOpts, evmd.EvmAppOptions, baseapp.SetChainID(chainID))
+		exampleApp = silcd.NewExampleApp(logger, db, traceStore, false, appOpts, silcd.EvmAppOptions, baseapp.SetChainID(chainID))
 
 		if err := exampleApp.LoadHeight(height); err != nil {
 			return servertypes.ExportedApp{}, err
 		}
 	} else {
-		exampleApp = evmd.NewExampleApp(logger, db, traceStore, true, appOpts, evmd.EvmAppOptions, baseapp.SetChainID(chainID))
+		exampleApp = silcd.NewExampleApp(logger, db, traceStore, true, appOpts, silcd.EvmAppOptions, baseapp.SetChainID(chainID))
 	}
 
 	return exampleApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs, modulesToExport)
@@ -430,7 +430,7 @@ func getChainIDFromOpts(appOpts servertypes.AppOptions) (chainID string, err err
 	if chainID == "" {
 		// If not available load from home
 		homeDir := cast.ToString(appOpts.Get(flags.FlagHome))
-		chainID, err = evmdconfig.GetChainIDFromHome(homeDir)
+		chainID, err = silcdconfig.GetChainIDFromHome(homeDir)
 		if err != nil {
 			return "", err
 		}

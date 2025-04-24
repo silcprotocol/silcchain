@@ -11,7 +11,7 @@ import (
 	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
 
-	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/silcd/config"
 	"github.com/silcprotocol/silcchain/crypto/ethsecp256k1"
 	"github.com/silcprotocol/silcchain/ethereum/eip712"
 	"github.com/silcprotocol/silcchain/testutil/constants"

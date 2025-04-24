@@ -7,8 +7,8 @@ import (
 
 	"github.com/silcprotocol/silcchain/ante"
 	evmante "github.com/silcprotocol/silcchain/ante/evm"
-	chainante "github.com/silcprotocol/silcchain/evmd/ante"
-	chainutil "github.com/silcprotocol/silcchain/evmd/testutil"
+	chainante "github.com/silcprotocol/silcchain/silcd/ante"
+	chainutil "github.com/silcprotocol/silcchain/silcd/testutil"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/factory"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/grpc"
 	"github.com/silcprotocol/silcchain/testutil/integration/os/keyring"

@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	chainconfig "github.com/silcprotocol/silcchain/cmd/evmd/config"
+	chainconfig "github.com/silcprotocol/silcchain/cmd/silcd/config"
 	cmn "github.com/silcprotocol/silcchain/precompiles/common"
 	"github.com/silcprotocol/silcchain/precompiles/distribution"
 	"github.com/silcprotocol/silcchain/testutil/constants"

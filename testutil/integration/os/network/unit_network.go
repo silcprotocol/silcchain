@@ -3,7 +3,7 @@ package network
 import (
 	"github.com/ethereum/go-ethereum/common"
 
-	exampleapp "github.com/silcprotocol/silcchain/evmd"
+	exampleapp "github.com/silcprotocol/silcchain/silcd"
 	"github.com/silcprotocol/silcchain/x/vm/statedb"
 
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
