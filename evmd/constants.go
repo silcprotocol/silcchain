@@ -2,7 +2,7 @@ package evmd
 
 const (
 	// ExampleChainDenom is the denomination of the Cosmos EVM example chain's base coin.
-	ExampleChainDenom = "asilc"
+	ExampleChainDenom = "sillet"
 
 	// ExampleDisplayDenom is the display denomination of the Cosmos EVM example chain's base coin.
 	ExampleDisplayDenom = "silc"
